@@ -143,7 +143,7 @@ body{
 
   /* Featured.js */
   .slider-container{
-    background-image: url('D:\Programming\Web Dev\react-world\/fd/src/Images/featured/b3.jpg');
+    background-image: url('QuicKart/src/Images/featured/b3.jpg');
     background-size: cover; /* Adjust as needed */
     background-repeat: no-repeat;
     position: relative;
@@ -544,7 +544,7 @@ body{
       
       /* slider */
       .slider-container{
-      background-image: url('D:\Programming\Web Dev\react-world\/fd/src/Images/featured/b33.jpg');
+      background-image: url('QuicKart/src/Images/featured/b33.jpg');
       object-fit:fill;
         padding: 20px 0px;
         height: 300px;
