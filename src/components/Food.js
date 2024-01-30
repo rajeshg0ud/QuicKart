@@ -17,18 +17,18 @@ const Food = () => {
       <div className='mainItem-container'>
       <h1>Buy Fresh Fruits Online </h1>
       <div className='food-grid'>
-  <Splide options={{ perPage: 6, gap: "1rem", grag: "free", arrows: true, autoplay: false, interval: 2800, rewind: false }}>
+  <Splide options={{ perPage: window.innerWidth < 768 ? 2 : 6, gap: "1rem", grag: "free", arrows: true, autoplay: false, interval: 2800, rewind: false }}>
     {foods.fruit.map((item) => (
         <SplideSlide key={item.id} className='food-item'>
           <img src={item.image} alt={item.name} />
           <div className='item-name'>
             <p>{item.name}</p>
-            <p>{item.weight}</p>
+          <p className='item-weight'>{item.weight}</p>
           </div>
           <div className="item-container">
             <p className="price-text">{"₹"}{item.price}</p>
             <div className='add-button'>
-              {cartItems[item.id] === 0 && <a className='addToCartBttn' onClick={() => addToCart(item.id)}>{"ADD TO CART"}</a>}
+              {cartItems[item.id] === 0 && <a className='addToCartBttn' onClick={() => addToCart(item.id)}>{"ADD"}</a>}
               {cartItems[item.id] > 0 && <a className='addToCartBttn' onClick={() => navigate("/cart")}>GO TO CART</a>}
             </div>
           </div>
@@ -41,18 +41,18 @@ const Food = () => {
       <div className='mainItem-container'>
       <h1>Buy Fresh Vegetables Online</h1>
       <div className='food-grid'>
-  <Splide options={{ perPage: 6, gap: "1rem", grag: "free", arrows: true, autoplay: false, interval: 2800, rewind: true }}>
+  <Splide options={{ perPage: window.innerWidth < 768 ? 2 : 6, gap: "1rem", grag: "free", arrows: true, autoplay: false, interval: 2800, rewind: true }}>
     {foods.vegetables.map((item) => (
         <SplideSlide key={item.id} className='food-item'>
           <img src={item.image} alt={item.name} />
           <div className='item-name'>
             <p>{item.name}</p>
-            <p>{item.weight}</p>
+          <p className='item-weight'>{item.weight}</p>
           </div>
           <div className="item-container">
             <p className="price-text">{"₹"}{item.price}</p>
             <div className='add-button'>
-              {cartItems[item.id] === 0 && <a className='addToCartBttn' onClick={() => addToCart(item.id)}>{"ADD TO CART"}</a>}
+              {cartItems[item.id] === 0 && <a className='addToCartBttn' onClick={() => addToCart(item.id)}>{"ADD"}</a>}
               {cartItems[item.id] > 0 && <a className='addToCartBttn' onClick={() => navigate("/cart")}>GO TO CART</a>}
             </div>
           </div>
@@ -66,18 +66,18 @@ const Food = () => {
       <div className='mainItem-container'>
       <h1>Buy Essentials Online</h1>
       <div className='food-grid'>
-  <Splide options={{ perPage: 6, gap: "1rem", grag: "free", arrows: true, autoplay: false, interval: 2800, rewind: true }}>
+  <Splide options={{ perPage: window.innerWidth < 768 ? 2 : 6, gap: "1rem", grag: "free", arrows: true, autoplay: false, interval: 2800, rewind: true }}>
     {foods.groceries.map((item) => (
         <SplideSlide key={item.id} className='food-item'>
           <img src={item.image} alt={item.name} />
           <div className='item-name'>
             <p>{item.name}</p>
-            <p>{item.weight}</p>
+          <p className='item-weight'>{item.weight}</p>
           </div>
           <div className="item-container">
             <p className="price-text">{"₹"}{item.price}</p>
             <div className='add-button'>
-              {cartItems[item.id] === 0 && <a className='addToCartBttn' onClick={() => addToCart(item.id)}>{"ADD TO CART"}</a>}
+              {cartItems[item.id] === 0 && <a className='addToCartBttn' onClick={() => addToCart(item.id)}>{"ADD"}</a>}
               {cartItems[item.id] > 0 && <a className='addToCartBttn' onClick={() => navigate("/cart")}>GO TO CART</a>}
             </div>
           </div>

@@ -13,7 +13,7 @@ const TopPicks = () => {
            <p >Delivery</p>
            <img  src={scooter} alt="sc"/>
         </div>
-            <Splide options={{perPage:4, gap:"1rem", grag:"free", arrows:false, autoplay: true, interval: 2800, rewind: true , }}>
+            <Splide options={{perPage: window.innerWidth < 768 ? 3 : 4, gap:"1rem", grag:"free", arrows:false, autoplay: true, interval: 2800, rewind: true , }}>
                 
                 {
                     topPicks.map((item)=>{

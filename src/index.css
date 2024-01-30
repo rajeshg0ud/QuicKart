@@ -143,7 +143,7 @@ body{
 
   /* Featured.js */
   .slider-container{
-    background-image: url('D:\Programming\Web Dev\react-world\/fd/src/Images/featured/b3.jpg');
+    background-image: url('Images/featured/b3.jpg');
     background-size: cover; /* Adjust as needed */
     background-repeat: no-repeat;
     position: relative;
@@ -306,7 +306,7 @@ body{
   
     /*food section*/
     .food-container {
-      width: 98%;
+      width: 98.7%;
       max-width: 1520px;
       margin: auto;
       padding: 20px;
@@ -319,7 +319,7 @@ body{
       text-align: center;
       padding: 10px 0;
     }
-    
+    /*
     .menu-filter{
       display: flex;
       justify-content: center;
@@ -340,7 +340,8 @@ body{
       border-color: rgb(190, 0, 0); 
     }
     
-    
+    */
+
     .food-item {
       height: 350px;
       background-color: white;
@@ -352,17 +353,10 @@ body{
     }
     
     .mainItem-container{
-      padding: 20px;
-      margin: 20px;
+      padding: 22px;
+      margin: 22px;
       border-radius: 4px;
       background-color: #efefef;
-    }
-    .food-item img {
-      width: 95%;
-      height: 240px;
-      object-fit: cover;
-      border-radius: 15px;
-      margin: 5px 0px 0 6px;
     }
     
     .food-item:hover {
@@ -370,6 +364,13 @@ body{
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
+    .food-item img {
+      width: 95%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin: 5px 0px -1px 6px;
+    }
     
     /* Styles for the outer div */
 .item-container {
@@ -378,21 +379,25 @@ body{
   display: flex;
   justify-content: space-between;
   font-weight: bold;
-  margin: -12px 0  0 14px;
+  margin: -12px 0  0px 14px;
 }
 
  .item-name {
   margin-left: 15px;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   font-size: 17px; 
   font-weight:bold;
-  display: flex;
-  justify-content: space-between;
 }
 .item-name p{
   margin-right: 8px;
+  margin-bottom: -10px;
+  padding-bottom: 0px;
 }
-
+.item-weight{
+  font-size: 13px;
+  font-weight: 500;
+  color: #747474;
+}
 .addToCartBttn{
   position: absolute;
   right: 10px;
@@ -401,7 +406,7 @@ body{
   background-color: transparent;
   border: 2px solid rgb(19, 19, 19);
   color: black;
-  min-width: 88px;
+  min-width: 30px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
@@ -532,11 +537,12 @@ body{
         text-align:left;
       }
       .toppicks-map{
-        width: 98px;
+        width: 110px;
+        margin-right: 5px;
       }
       .toppicks-img {
         width: 99%;
-        height: 80px;
+        height: 82px;
         object-fit:cover;
         transition: transform 0.3s ease-out;
       }
@@ -544,10 +550,10 @@ body{
       
       /* slider */
       .slider-container{
-      background-image: url('D:\Programming\Web Dev\react-world\/fd/src/Images/featured/b33.jpg');
+      background-image: url('Images/featured/b32.jpg');
       object-fit:fill;
         padding: 20px 0px;
-        height: 300px;
+        height: 207px;
         width:99.9%;
         max-width: 1520px;
       }
@@ -583,26 +589,36 @@ body{
         padding: 0px;
         max-width: 500px;
       }
+
+      .mainItem-container{
+        font-size: 10px;
+      }
       
       .food-item{
-        min-width: 165px;
+        min-width: 135px;
         margin: 0px;
         border-radius: 20px;
         max-width: 190px;
-        max-height: 276px;
+        max-height: 260px;
       }
       
       .food-item img {
         margin: 5px;
-        max-width: 180px;
+        max-width: 120px;
         height:150px;}
-  
+
+        .food-item p{
+          font-size: 14px;
+        }
       .item-container{
         top:0px
       }
+      .item-weight{
+        font-size: 7px;
+      }
       .addToCartBttn{
         font-size: 11px;
-        min-width: 73px;
+        min-width: 28px;
       }
       .menu-filter{
         display: flex;

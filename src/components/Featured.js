@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 /*
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import {RxDotFilled} from 'react-icons/rx';
@@ -33,7 +32,7 @@ const Featured = () => {
 
   return (
     <div className='slider-container'>
-        {/*<img className='img' src={`${sliders[currentIndex].url}` }/>
+         {/*<img className='img' src={`${sliders[currentIndex].url}` }/>
         <div >
             <BsChevronCompactLeft className='Chevron-left' onClick={()=>prevSlider(currentIndex)}/>
             <BsChevronCompactRight className='Chevron-right' onClick={()=>nextSlider(currentIndex)}/>
