@@ -584,7 +584,11 @@ body{
       
       /* slider */
       .slider-container{
+<<<<<<< HEAD
       background-image: url('Images/featured/b32.jpg');
+=======
+      background-image: url('Images/featured/b33.jpg');
+>>>>>>> 504550afc9081ccd7f9279645d303e0c21443ca7
       object-fit:fill;
         padding: 20px 0px;
         height: 207px;
