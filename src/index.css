@@ -610,6 +610,7 @@ body{
         display: flex;
         flex-direction: column;
         max-width: 600px;
+        align-items: center;
       }
       .delivery-img{
         align-self: center;
@@ -681,6 +682,15 @@ body{
         margin: 4px ;
           margin-bottom: 7px;
         font-size: 14.2px;
+      }
+      /*footer*/
+      .footer-content{
+        margin-left: 10px;
+        margin-right: 8px;
+      }
+      .footer-social{
+        margin-right: 10px;
+        margin-left: 5px;
       }
     }
   
