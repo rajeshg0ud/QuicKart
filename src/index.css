@@ -586,9 +586,15 @@ body{
   
       
       /* slider */
+<<<<<<< HEAD
       #slider-container{
       background-image: url('Images/featured/b32.jpg');
       object-fit:cover;
+=======
+      .slider-container{
+      background-image: url('Images/featured/b32.jpg');
+      object-fit:fill;
+>>>>>>> ce3282336fa164dd107dc9639c8a30e6e2fb25a7
         padding: 20px 0px;
         height: 190px;
         min-width:416px;
