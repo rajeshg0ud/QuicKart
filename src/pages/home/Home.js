@@ -7,7 +7,7 @@ import Footer from '../../components/Footer';
 
 const Home = () => {
   return (
-    <div>
+    <div className='Home-container'>
       <TopPicks />
       <Featured />
       <Food />

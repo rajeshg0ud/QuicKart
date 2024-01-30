@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-/*
+/*import React, { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import {RxDotFilled} from 'react-icons/rx';
 import a from '../Images/featured/b3.jpg';
@@ -7,7 +6,7 @@ import a from '../Images/featured/b3.jpg';
 
 const Featured = () => {
 
-{/* 
+/* {
     const [currentIndex, setCurrentInder]=useState(0);
     const prevSlider=()=>{
         const isFirstSlide= currentIndex===0;
@@ -28,10 +27,10 @@ const Featured = () => {
             id: 1,
             url: a,
           },
-    ] */}
+    ]} */
 
   return (
-    <div className='slider-container'>
+    <div className='slider-container' id="slider-container">
          {/*<img className='img' src={`${sliders[currentIndex].url}` }/>
         <div >
             <BsChevronCompactLeft className='Chevron-left' onClick={()=>prevSlider(currentIndex)}/>
@@ -48,4 +47,4 @@ const Featured = () => {
   )
 }
 
-export default Featured
+export default Featured;

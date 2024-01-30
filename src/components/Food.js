@@ -16,7 +16,7 @@ const Food = () => {
     <div className='food-container'>
       <h1 className="h1-center">Order Essentials</h1>
       <div className='mainItem-container'>
-      <h1>Buy Fresh Fruits Online </h1>
+      <h2>Buy Fresh Fruits Online </h2>
       <div className='food-grid'>
   <Splide options={{ perPage: window.innerWidth < 768 ? 2 : 6, gap: "1rem", grag: "free", arrows: true, autoplay: false, interval: 2800, rewind: false }}>
     {foods.fruit.map((item) => (
@@ -47,7 +47,7 @@ const Food = () => {
       </div>
 
       <div className='mainItem-container'>
-      <h1>Buy Fresh Vegetables Online</h1>
+      <h2>Buy Fresh Vegetables Online</h2>
       <div className='food-grid'>
   <Splide options={{ perPage: window.innerWidth < 768 ? 2 : 6, gap: "1rem", grag: "free", arrows: true, autoplay: false, interval: 2800, rewind: true }}>
     {foods.vegetables.map((item) => (
@@ -78,7 +78,7 @@ const Food = () => {
 
 
       <div className='mainItem-container'>
-      <h1>Buy Essentials Online</h1>
+      <h2>Buy Essentials Online</h2>
       <div className='food-grid'>
   <Splide options={{ perPage: window.innerWidth < 768 ? 2 : 6, gap: "1rem", grag: "free", arrows: true, autoplay: false, interval: 2800, rewind: true }}>
     {foods.groceries.map((item) => (
