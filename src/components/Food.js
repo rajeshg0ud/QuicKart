@@ -9,7 +9,8 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 const Food = () => {
   const navigate = useNavigate();
   const [foods, setFoods] = useState(Data);
-  const { addToCart, cartItems } = useContext(DataContext);
+  
+  const {cartItems, addToCart, removeFromCart, updateCartItemCount}= useContext(DataContext);
 
   return (
     <div className='food-container'>
@@ -29,7 +30,14 @@ const Food = () => {
             <p className="price-text">{"₹"}{item.price}</p>
             <div className='add-button'>
               {cartItems[item.id] === 0 && <a className='addToCartBttn' onClick={() => addToCart(item.id)}>{"ADD"}</a>}
-              {cartItems[item.id] > 0 && <a className='addToCartBttn' onClick={() => navigate("/cart")}>GO TO CART</a>}
+
+              {cartItems[item.id] > 0 && <div className='handleCount'>
+                <button onClick={()=>{removeFromCart(item.id)}}>-</button>
+                <p className='item-value'>{cartItems[item.id]}</p>
+
+                <button onClick={()=>{addToCart(item.id)}}>+</button>
+            </div>}
+
             </div>
           </div>
         </SplideSlide>
@@ -51,9 +59,15 @@ const Food = () => {
           </div>
           <div className="item-container">
             <p className="price-text">{"₹"}{item.price}</p>
-            <div className='add-button'>
+           <div className='add-button'>
               {cartItems[item.id] === 0 && <a className='addToCartBttn' onClick={() => addToCart(item.id)}>{"ADD"}</a>}
-              {cartItems[item.id] > 0 && <a className='addToCartBttn' onClick={() => navigate("/cart")}>GO TO CART</a>}
+
+              {cartItems[item.id] > 0 && <div className='handleCount'>
+                <button onClick={()=>{removeFromCart(item.id)}}>-</button>
+                <p className='item-value'>{cartItems[item.id]}</p>
+
+                <button onClick={()=>{addToCart(item.id)}}>+</button>
+            </div>}
             </div>
           </div>
         </SplideSlide>
@@ -78,7 +92,13 @@ const Food = () => {
             <p className="price-text">{"₹"}{item.price}</p>
             <div className='add-button'>
               {cartItems[item.id] === 0 && <a className='addToCartBttn' onClick={() => addToCart(item.id)}>{"ADD"}</a>}
-              {cartItems[item.id] > 0 && <a className='addToCartBttn' onClick={() => navigate("/cart")}>GO TO CART</a>}
+
+              {cartItems[item.id] > 0 && <div className='handleCount'>
+                <button onClick={()=>{removeFromCart(item.id)}}>-</button>
+                <p className='item-value'>{cartItems[item.id]}</p>
+
+                <button onClick={()=>{addToCart(item.id)}}>+</button>
+            </div>}
             </div>
           </div>
         </SplideSlide>
