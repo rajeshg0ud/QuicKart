@@ -204,42 +204,7 @@ body{
     cursor: pointer;
   }
 
-  /*delivery js*/
-  .h1-center{
-    position: relative;
-    width: 100%;
-    text-align: center;
-    padding: 20px 10px;
-    color: rgb(225, 4, 4);
-  }
-  .img-container{
-    display: flex;
-    max-width: 1200px;
-
-  }
-  .delivery-img{
-    height: 400px;
-    width: 440px;
-    margin: 4px 125px;
-  }
-
-  .install-apk{
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-  }
-  .install-apk p{
-    font-weight: bold;
-  }
-  .img-container button{
-    background-color: black;
-    color: white;
-    width: 130px;
-    padding: 5px 0;
-    border-radius: 10px ;
-    cursor: pointer;
-  }
-
+  
   /* toppicks-item-container*/
   .toppicks-container{
     position: relative;
@@ -458,18 +423,60 @@ body{
 .item-value{
   color: white;
 }
-  
+
+
+  /*Delivery*/
+  .delivery-container{
+    width: 100%;
+  }
+  .h1-center{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 20px 10px;
+    color: rgb(225, 4, 4);
+  }
+  .img-container{
+    display: flex;
+    justify-content: center;
+
+  }
+  .delivery-img{
+    height: 400px;
+    width: 440px;
+    margin: 4px 125px;
+  }
+
+  .install-apk{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    max-width: 500px;
+  }
+  .install-apk p{
+    font-weight: bold;
+  }
+  .img-container button{
+    background-color: black;
+    color: white;
+    width: 130px;
+    padding: 5px 0;
+    border-radius: 10px ;
+    cursor: pointer;
+  }
+
    /* footer*/
    .footer-container {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     background-color: #ececec;
-    
+    width: 100%;
   }
   
   .footer-content {
     max-width: 400px;
+    margin-left: 29px;
   }
   
   .footer-heading {
@@ -504,6 +511,7 @@ body{
   .footer-social {
     display: flex;
     flex-direction: column;
+    margin-right: 25px;
   }
 
 
@@ -586,15 +594,9 @@ body{
   
       
       /* slider */
-<<<<<<< HEAD
       #slider-container{
       background-image: url('Images/featured/b32.jpg');
       object-fit:cover;
-=======
-      .slider-container{
-      background-image: url('Images/featured/b32.jpg');
-      object-fit:fill;
->>>>>>> ce3282336fa164dd107dc9639c8a30e6e2fb25a7
         padding: 20px 0px;
         height: 190px;
         min-width:416px;
