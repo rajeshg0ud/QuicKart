@@ -605,32 +605,7 @@ body{
         margin: 0%;
         max-width: 1520px;
       }
-  
-      /*deliver js*/
-      .img-container{
-        display: flex;
-        flex-direction: column;
-        max-width: 600px;
-        align-items: center;
-      }
-      .delivery-img{
-        align-self: center;
-        max-height: 350px;
-        max-width: 350px;
-      }
-      .h1-center{
-        font-size: x-large;
-      }
-      .install-apk .get{
-        font-size: large;
-      }
-      .install-apk h2{
-        font-size: larger;
-        font-weight: bold;
-      }
-      .install-apk .description{
-        font-weight: 400;
-      }
+
       /*food*/
       .food-container {
         margin: auto;
@@ -642,6 +617,7 @@ body{
         font-size: 10px;
         width: 90%;
       }
+      
       
       .food-item{
         display: flex;
@@ -683,6 +659,38 @@ body{
           margin-bottom: 7px;
         font-size: 14.2px;
       }
+
+
+      /*deliver js*/
+      .delivery-container{
+        width: 100%;
+        margin: 0%;
+      }
+      .img-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0%;
+      }
+      .delivery-img{
+        align-self: center;
+        max-height: 350px;
+        max-width: 350px;
+      }
+      .h1-center{
+        font-size: x-large;
+      }
+      .install-apk .get{
+        font-size: large;
+      }
+      .install-apk h2{
+        font-size: larger;
+        font-weight: bold;
+      }
+      .install-apk .description{
+        font-weight: 400;
+      }
+      
       /*footer*/
       .footer-content{
         margin-left: 10px;
